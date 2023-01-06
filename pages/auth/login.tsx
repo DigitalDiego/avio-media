@@ -20,6 +20,7 @@ export default function Auth() {
     <>
       <Head>
         <title>Avio | Login</title>
+        <link rel="shortcut icon" href="/avio.svg" type="image/x-icon" />
       </Head>
       <div className="w-full h-screen flex">
         <div className="relative hidden lg:inline w-1/2 h-full">
