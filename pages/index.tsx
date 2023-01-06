@@ -22,7 +22,7 @@ export default function Home({ posts }: IProps) {
       <Head>
         <title>Avio</title>
       </Head>
-      <div className="w-full flex justify-start items-center flex-col gap-8 px-[10vw]">
+      <div className="w-full flex justify-start items-center flex-col gap-8 px-[2vw] lg:px-[10vw] 2xl:max-w-7xl 2xl:mx-auto 2xl:px-[5vw]">
         {posts?.map((post) => (
           <Post {...post} key={post?._id} />
         ))}

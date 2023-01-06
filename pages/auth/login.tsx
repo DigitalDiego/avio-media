@@ -22,7 +22,7 @@ export default function Auth() {
         <title>Avio | Login</title>
       </Head>
       <div className="w-full h-screen flex">
-        <div className="relative w-1/2 h-full">
+        <div className="relative hidden lg:inline w-1/2 h-full">
           <Image
             className="w-full h-full object-cover"
             src="/images/login-image.jpg"
@@ -34,10 +34,12 @@ export default function Auth() {
             <p className="font-courgette text-white text-7xl">Avio</p>
           </div>
         </div>
-        <div className="w-1/2 h-full grid place-items-center">
+        <div className="w-full lg:w-1/2 h-full grid place-items-center">
           <div className="flex justify-center items-center flex-col gap-2 w-4/5">
-            <p className="text-center text-5xl font-bold">Welcome to Avio</p>
-            <p className="text-sm text-center w-4/5">
+            <p className="text-center text-4xl lg:text-5xl font-bold">
+              Welcome to Avio
+            </p>
+            <p className="text-sm text-center w-4/5 2xl:w-2/5">
               Join today to meet and interact with like minded people about your
               similar interests.
             </p>

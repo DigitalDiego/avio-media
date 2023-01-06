@@ -17,7 +17,6 @@ interface IProps {
 export default function Post({ post, comments }: IProps) {
   const [comment, setComment] = useState("");
   const router = useRouter();
-  console.log(comments);
 
   const createComment = () => {
     if (comment.replace(/\s/g, "").length === 0) {
@@ -41,8 +40,8 @@ export default function Post({ post, comments }: IProps) {
       <Head>
         <title>Avio | {post[0]?.content}</title>
       </Head>
-      <div className="w-full flex justify-start items-center gap-8 flex-col px-[10vw] pb-8">
-        <div className="w-3/5 flex flex-col gap-8">
+      <div className="w-full flex justify-start items-center gap-8 flex-col px-[2vw] lg:px-[10vw] pb-8 2xl:max-w-7xl 2xl:mx-auto 2xl:px-[5vw]">
+        <div className="w-full lg:w-3/5 flex flex-col gap-8">
           <div className="w-full flex justify-between items-center">
             <div className="flex items-center gap-2">
               <Image

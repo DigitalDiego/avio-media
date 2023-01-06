@@ -33,17 +33,20 @@ export default function Navbar() {
     });
   };
   return (
-    <div className="w-full px-[10vw] mb-8">
+    <div className="w-full px-[2vw] lg:px-[10vw] mb-8 2xl:max-w-7xl 2xl:mx-auto 2xl:px-[5vw]">
       <div className="w-full h-[10vh] flex justify-between items-center mb-8">
         <Link className="text-4xl font-bold font-courgette" href="/">
           Avio
         </Link>
-        <button className="px-4 py-2 bg-rose-500 text-white rounded-lg outline-none">
+        <button
+          className="px-4 py-2 bg-rose-500 text-white rounded-lg outline-none"
+          onClick={logout}
+        >
           Log Out
         </button>
       </div>
       <div className="w-full h-[10vh] grid place-items-center">
-        <div className="w-3/5 flex justify-between items-center gap-2">
+        <div className="w-full lg:w-3/5 flex justify-between items-center gap-2">
           <input
             className="w-full outline-none border-none bg-transparent"
             type="text"

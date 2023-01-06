@@ -8,7 +8,7 @@ export default function Post(props: IPost) {
   return (
     <Link
       href={`/post/${props?._id}`}
-      className="w-3/5 shadow-md rounded-lg p-2 flex justify-start items-start flex-col gap-2"
+      className="w-full lg:w-3/5 shadow-md rounded-lg p-2 flex justify-start items-start flex-col gap-2"
     >
       <div className="w-full flex justify-between items-center">
         <div className="flex items-center gap-2">
