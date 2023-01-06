@@ -21,6 +21,7 @@ export default function Home({ posts }: IProps) {
     <>
       <Head>
         <title>Avio</title>
+        <link rel="shortcut icon" href="/avio.svg" type="image/x-icon" />
       </Head>
       <div className="w-full flex justify-start items-center flex-col gap-8 px-[2vw] lg:px-[10vw] 2xl:max-w-7xl 2xl:mx-auto 2xl:px-[5vw]">
         {posts?.map((post) => (
